@@ -3,13 +3,16 @@ package info.siddhuw
 import info.siddhuw.ListUtils
 import info.siddhuw.LinkedListUtils
 
-/**
- * Story:
- * As a user of ListUtils, I want to be able to find the ith element from the
- * end of a linked list so that I can search the linked list in both
- * directions in a single pass.
- *
- */
+
+description "This story is about testing the behaviour of the method written to\
+find the ith element from the end of a list"
+
+narrative "Find the ith element from the end of a list", {
+	as_a "user of ListUtils"
+	i_want "to be able to find the ith element from the end of a singly linked list"
+	so_that "I can search the linked list in both directions in a single pass"
+}
+
 scenario "element with reverse index i searched for in a list of size n > i", {
 	given "an empty list", {
 		listUtils = new LinkedListUtils<Integer>()
